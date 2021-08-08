@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+
+@import "footer";
+
+$green: #c1d64b;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+@font-face {
+  font-family: "BebasNeue";
+  src: url("../asset/fonts/BebasNeue Regular.ttf");
+}
+
+.sign-up_button {
+  padding: 15px 20px;
+  color: #394001;
+  background-color: #cee355;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 5px #7e9111;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.sign-up_button:hover {
+  background-color: #f4d844;
+  box-shadow: 0px 5px #a08801;
+}
+
+.socials {
+  display: flex;
+  height: 32px;
+  list-style: none;
+  column-gap: 5px;
+}
+
+.socials-item {
+  border: 2px solid #fff;
+  border-radius: 50%;
+  transition: all 0.2s;
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 29px;
+    height: 29px;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.2s;
+  }
+  &:hover {
+    a {
+      color: #2c5871;
+    }
+    background-color: #2ab8c5;
+    border-color: #2ab8c5;
+  }
+}

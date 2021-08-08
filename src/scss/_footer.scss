@@ -1,0 +1,41 @@
+footer {
+  background: #0f303f;
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+}
+
+.copyright {
+  display: flex;
+  height: 100px;
+  align-items: center;
+  padding-bottom: 5px;
+}
+
+.copyright-links {
+  padding-left: 33px;
+  color: #2c5871;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 18px;
+  span {
+    padding: 0 5px;
+  }
+  a {
+    color: #2c5871;
+    text-decoration: none;
+    &:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+  }
+}
+
+.footer-logo {
+  display: block;
+  filter: invert(60%) sepia(13%) saturate(1813%) hue-rotate(158deg) brightness(94%) contrast(89%);
+}
