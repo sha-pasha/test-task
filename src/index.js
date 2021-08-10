@@ -1,18 +1,19 @@
 import "./scss/main.scss";
 
-const langSwitcher = document.querySelector(".lang-switcher");
-const langList = document.querySelector(".lang-list");
+const langSwitchers = document.querySelectorAll(".lang-switcher");
 
-langSwitcher.addEventListener("click", () => {
-  langSwitcher.classList.toggle("open");
-  if (langSwitcher.classList.contains("open")) {
-    setTimeout(() => {
-      langList.style.display = "block";
-    }, 300);
-  } else {
-    langList.style.display = "none";
-  }
-});
+for (let langSwitcher of langSwitchers) {
+  langSwitcher.addEventListener("click", () => {
+    langSwitcher.classList.toggle("open");
+    if (langSwitcher.classList.contains("open")) {
+      setTimeout(() => {
+        langSwitcher.children[0].style.display = "block";
+      }, 300);
+    } else {
+      langSwitcher.children[0].style.display = "none";
+    }
+  });
+}
 
 const langItems = document.querySelectorAll(".lang-item");
 for (let lang of langItems) {

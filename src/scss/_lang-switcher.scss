@@ -56,18 +56,18 @@
   }
 }
 
+.lang-switcher_footer {
+  display: none;
+}
+
 @media screen and (max-width: 767px) {
-  .lang-switcher {
+  .lang-switcher_footer  {
+    display: block;
     position: absolute;
-    top: 1612px;
-    left: calc(50% + 20px);
-    z-index: 10;
-    @media screen and (max-width: 320px) {
-      top: 1660px;
-    }
-    &:after {
-      transform: rotate(225deg);
-      top: 12px;
-    }
+    top: 22px;
+    right: calc(50% - 142px);
+  }
+  .lang-switcher_header {
+    display: none;
   }
 }
