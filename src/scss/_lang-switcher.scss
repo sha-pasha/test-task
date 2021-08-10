@@ -59,11 +59,11 @@
 @media screen and (max-width: 767px) {
   .lang-switcher {
     position: absolute;
-    bottom: -146%;
+    top: 1612px;
     left: calc(50% + 20px);
     z-index: 10;
-    @media screen and (max-width: 320px){
-      bottom: -153%;
+    @media screen and (max-width: 320px) {
+      top: 1660px;
     }
     &:after {
       transform: rotate(225deg);

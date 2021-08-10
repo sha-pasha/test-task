@@ -340,7 +340,10 @@
   .service-desc {
     top: 140px;
     left: 9px;
-    width: auto;
+    width: 255px;
+    h3{
+      padding: 5px;
+    }
     p {
       display: none;
     }
