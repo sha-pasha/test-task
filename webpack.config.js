@@ -8,14 +8,10 @@ module.exports = {
   output: {
     filename: "bundle.js",
     path: path.resolve(__dirname, "dist"),
-    assetModuleFilename: "asset/[name][ext]",
+    assetModuleFilename: "assets/img/[name][ext]",
   },
   module: {
     rules: [
-      {
-        test: /\.(png|svg|jpg|jpeg|gif|ttf)$/i,
-        type: "asset/resource",
-      },
       {
         test: /\.(s*)css$/,
         use: [miniCss.loader, "css-loader", "sass-loader"],
@@ -36,7 +32,7 @@ module.exports = {
     new CopyWebpackPlugin({
       patterns: [
         {
-          from: path.resolve(__dirname, './src/asset'),
+          from: path.resolve(__dirname, './src/assets'),
           to: 'assets',
         },
       ],
