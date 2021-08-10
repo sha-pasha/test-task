@@ -40,9 +40,9 @@ for (let i = 0; i < serviceTabs.length; i++) {
 }
 
 const burgerMenu = document.querySelector(".burger-menu");
-const menu = document.querySelector('.menu');
+const menu = document.querySelector(".menu");
 
-burgerMenu.addEventListener( 'click', ()=>{
-  menu.classList.toggle('open')
+burgerMenu.addEventListener("click", () => {
+  menu.classList.toggle("open");
 });
 
