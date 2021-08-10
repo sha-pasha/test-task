@@ -1,0 +1,151 @@
+.send-fax {
+  position: relative;
+  margin-bottom: 100px;
+  overflow-x: clip;
+}
+
+h1 {
+  padding-top: 56px;
+  font-family: "BebasNeue";
+  font-size: 69px;
+  letter-spacing: 1.3px;
+  color: #fff;
+}
+
+.send-fax_heading-text {
+  padding-top: 8px;
+  font-family: "BebasNeue";
+  font-size: 45px;
+  color: #c1d64b;
+}
+
+.send-fax_text {
+  padding: 35px 0;
+  width: 500px;
+  font-size: 21px;
+  font-style: italic;
+  color: #fff;
+}
+
+.send-fax_button {
+  margin: 10px 0px;
+}
+
+.round-bg {
+  position: absolute;
+  top: -107px;
+  left: -5%;
+  z-index: -10;
+  width: 110%;
+  height: 657px;
+  border-bottom-left-radius: 50% 140px;
+  border-bottom-right-radius: 50% 140px;
+  background: #2c5871;
+  background-image: url(../assets/img/map.png);
+  background-repeat: no-repeat;
+  background-position: calc(50% + 50px) 72%;
+  overflow: hidden;
+
+  &:after {
+    content: "";
+    position: absolute;
+    z-index: -100;
+    width: 100%;
+    height: 660px;
+    background-image: url(../assets/img/welcom_img.png);
+    background-repeat: no-repeat;
+    background-position: calc(50% + 165px) 115px;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  h1 {
+    padding-top: 42px;
+    font-size: 62px;
+  }
+  .send-fax_heading-text {
+    padding-top: 5px;
+    font-size: 36px;
+  }
+  .send-fax_text {
+    padding: 31px 0;
+    width: 388px;
+    font-size: 20px;
+  }
+  .send-fax_button {
+    margin: 15px 0px;
+  }
+  .round-bg {
+    height: 584px;
+    border-bottom-left-radius: 50% 50px;
+    border-bottom-right-radius: 50% 50px;
+    background-position: calc(50% + 44px) 44%;
+
+    &:after {
+      background-size: 60%;
+      background-position: calc(50% + 136px) 113px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  h1 {
+    padding-top: 20px;
+    font-size: 57px;
+  }
+  .send-fax_heading-text {
+    padding-top: 6px;
+    font-size: 30px;
+  }
+  .send-fax_text {
+    padding: 26px 0;
+    width: 270px;
+    font-size: 18px;
+  }
+  .send-fax_button {
+    margin: 6px 0px;
+  }
+  .round-bg {
+    height: 472px;
+    border-bottom-left-radius: 50% 33px;
+    border-bottom-right-radius: 50% 33px;
+    background-position: calc(50% + 27px) 12%;
+    background-size: 95%;
+
+    &:after {
+      background-size: 55%;
+      background-position: calc(50% + 117px) 130px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .send-fax {
+    margin-bottom: 55px;
+    text-align: center;
+  }
+  h1 {
+    padding-top: 7px;
+    font-size: 41px;
+  }
+  .send-fax_heading-text {
+    padding: 14px 50px;
+    font-size: 22px;
+  }
+  .send-fax_text {
+    display: none;
+  }
+  .send-fax_button {
+    margin: 12px 0px;
+  }
+  .round-bg {
+    height: 332px;
+    border-bottom-left-radius: 50% 10px;
+    border-bottom-right-radius: 50% 10px;
+    background-position: calc(50% + 22px) 55%;
+    background-size: 136%;
+    &:after {
+      content: none;
+    }
+  }
+}

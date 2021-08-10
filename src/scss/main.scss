@@ -1,8 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
 
+@import "top";
+@import "header";
+@import "socials";
+@import "lang-switcher";
+@import "send-fax";
+@import "how-send";
+@import "our-offer";
 @import "footer";
 
-$green: #c1d64b;
+@font-face {
+  font-family: "BebasNeue";
+  src: url("../assets/fonts/BebasNeue Regular.ttf");
+}
 
 * {
   margin: 0;
@@ -12,16 +22,32 @@ $green: #c1d64b;
 
 body {
   font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #2c5871;
+  &:hover {
+    background: #2ab8c5;
+  }
 }
 
 .container {
   max-width: 1100px;
   margin: 0 auto;
-}
 
-@font-face {
-  font-family: "BebasNeue";
-  src: url("../asset/fonts/BebasNeue Regular.ttf");
+  @media screen and (min-width: 992px) and (max-width: 1200px) {
+    max-width: 912px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    max-width: 707px;
+  }
+  @media screen and (max-width: 767px) {
+    max-width: 287px;
+  }
 }
 
 .sign-up_button {
@@ -35,39 +61,16 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   cursor: pointer;
-}
-
-.sign-up_button:hover {
-  background-color: #f4d844;
-  box-shadow: 0px 5px #a08801;
-}
-
-.socials {
-  display: flex;
-  height: 32px;
-  list-style: none;
-  column-gap: 5px;
-}
-
-.socials-item {
-  border: 2px solid #fff;
-  border-radius: 50%;
-  transition: all 0.2s;
-  a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 29px;
-    height: 29px;
-    color: #fff;
-    text-decoration: none;
-    transition: all 0.2s;
-  }
   &:hover {
-    a {
-      color: #2c5871;
-    }
-    background-color: #2ab8c5;
-    border-color: #2ab8c5;
+    background-color: #f4d844;
+    box-shadow: 0px 5px #a08801;
+  }
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    padding: 16px 27px;
+    font-size: 15px;
+  }
+  @media screen and (max-width: 767px) {
+    padding: 16px 16px;
+    font-size: 14px;
   }
 }
