@@ -101,18 +101,20 @@ nav {
     position: absolute;
     z-index: 100;
     flex-direction: column;
-    top: 41px;
+    top: 45px;
     left: -300px;
+    padding: 20px 0;
     width: 300px;
-    background: #224a60ee;
-    border-radius: 10px;
+    background: #0f303f;
+    border-radius: 20px;
     display: none;
     &.open {
       display: block;
     }
   }
   .menu-item {
-    height: 40px;
+    height: 65px;
+    line-height: 50px;
     &:hover {
       background: #266f96;
     }
@@ -132,25 +134,37 @@ nav {
   .burger_icon,
   .burger_icon::before,
   .burger_icon::after {
+    position: absolute;
     width: 35px;
     height: 4px;
     background: #fff;
+    border-radius: 2px;
+    transition: transform 0.1s ease-in, top 0.1s ease-in 0.1s;
   }
 
   .burger_icon {
-    position: relative;
-
     &::before {
       content: "";
-      position: absolute;
       top: -10px;
       left: 0px;
     }
     &::after {
       content: "";
-      position: absolute;
       top: 10px;
       left: 0px;
+    }
+    &.open {
+      background: #0000;
+      &::before {
+        top: 0px;
+        transform: rotate(-45deg);
+        transition: top 0.1s ease-in, transform 0.1s ease-in 0.1s;
+      }
+      &::after {
+        top: 0px;
+        transform: rotate(45deg);
+        transition: top 0.1s ease-in, transform 0.1s ease-in 0.1s;
+      }
     }
   }
 }

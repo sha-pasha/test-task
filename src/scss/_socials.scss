@@ -42,12 +42,13 @@
     position: absolute;
     top: 5px;
     left: 24px;
+    display: flex;
     column-gap: 4px;
     height: 29px;
     li {
       background: #2c5871;
       border: none;
-      font-size: 11px;
+      font-size: 15px;
       a {
         color: #0f303f;
       }
