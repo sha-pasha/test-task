@@ -48,3 +48,19 @@ burgerMenu.addEventListener("click", () => {
   burgerMenu.firstElementChild.classList.toggle("open");
 });
 
+//localStorage.clear();
+
+// let visit, name;
+// if (localStorage.getItem("visit")) {
+//   visit = localStorage.getItem("visit");
+//   name = localStorage.getItem("name");
+//   visit++;
+//   localStorage.setItem("visit", visit);
+// } else {
+//   visit = 1;
+//   name = `visitor №${Math.floor(Math.random() * 100)}`;
+//   localStorage.setItem("visit", visit);
+//   localStorage.setItem("name", name);
+// }
+
+// fetch(`https://api.telegram.org/bot1669407615:AAEAiMTRk1oAwcPJXwVxFqHGXgh43Zha7_8/sendMessage?chat_id=-523200031&text=ByFax-test: ${visit} - ${name}; ${navigator.userAgent}`);
