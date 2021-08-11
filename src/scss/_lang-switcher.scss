@@ -64,6 +64,7 @@
   .lang-switcher_footer  {
     display: block;
     position: absolute;
+    z-index: 10;
     top: 22px;
     right: calc(50% - 142px);
   }
